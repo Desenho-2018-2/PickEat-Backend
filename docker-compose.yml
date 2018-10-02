@@ -15,3 +15,11 @@ services:
          - ".:/home"
         ports:
          - "8000:8000"
+
+    run_unit_tests:
+        build: .
+        command: python3 PickEat/manage.py test
+        volumes:
+         - ".:/home"
+        ports:
+         - "8000:8000"
