@@ -20,3 +20,5 @@ RUN apt-get install -y \
 ADD requirements.txt . 
 
 RUN pip3 install -r requirements.txt 
+
+EXPOSE 8000
